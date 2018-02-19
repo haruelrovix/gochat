@@ -83,8 +83,16 @@ func SendMessage(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	if len(body) == 0 {
+		return
+	}
+
 	// Dump message to database
 	insertMessage(body)
+
+	if err := json.NewEncoder(w).Encode(http.StatusOK); err != nil {
+		panic(err)
+	}
 }
 
 // API to retrieve messages

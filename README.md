@@ -92,3 +92,8 @@ WebSocket can be tested using [Smart Websocket Client](https://chrome.google.com
 [negroni] 2018-02-19T01:43:04+07:00 | 200 |      177.932µs | localhost:9000 | GET /chat
 [negroni] 2018-02-19T01:50:52+07:00 | 200 |      1.622574ms | localhost:9000 | GET /chat
 ```
+
+### Debugging
+VS Code and [Delve](https://github.com/derekparker/delve), a debugger for the Go programming language.
+
+<img src="https://i.imgur.com/kldvHPj.png" alt="Debugging" width="50%" />

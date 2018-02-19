@@ -7,7 +7,7 @@ import (
 	_ "github.com/mattn/go-sqlite3"
 	"github.com/urfave/negroni"
 
-	"./lib"
+	"gochat/lib"
 )
 
 // Config
